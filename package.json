@@ -3,14 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-	"dev": "vite build --watch",
+    "dev": "vite build --watch",
     "build": "vite build",
     "preview": "vite preview",
-	"serve": "vite serve",
+    "serve": "vite serve",
     "lint": "eslint . --fix --ignore-path .gitignore"
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
+    "axios": "^1.4.0",
     "core-js": "^3.29.0",
     "roboto-fontface": "*",
     "vue": "^3.2.0",
