@@ -58,7 +58,7 @@ export function registerPlugins(app) {
   window.axios = axios;
   loadFonts();
 
-//   app.use(vuetify).use(router).use(VueAxios, axios).use(snackbar, {
-//     timeout: 3500,
-//   });
+  app.use(vuetify).use(router).use(VueAxios, axios)/*.use(snackbar, {
+    timeout: 3500,
+  })*/;
 }
