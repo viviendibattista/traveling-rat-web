@@ -1,20 +1,23 @@
-/**
- * main.js
- *
- * Bootstraps Vuetify and other plugins then mounts the App`
- */
+import App from "./App.vue";
+import { createApp } from "vue";
+import { registerPlugins } from "@/plugins";
+import { appStore } from "./store/app";
+import i18n from "./utils/i18n";
 
-// Components
-import App from './App.vue'
+const app = createApp(App);
 
-// Composables
-import { createApp } from 'vue'
+registerPlugins(app);
 
-// Plugins
-import { registerPlugins } from '@/plugins'
+const config = (varName) => {
+  return varName.split(".").reduce((o, x) => o[x], appStore.getState().config);
+};
 
-const app = createApp(App)
+const canAccess = (roleName) => {
+  if (appStore.getState().user_role >= config("role." + roleName)) return true;
+  return false;
+};
 
-registerPlugins(app)
-
-app.mount('#app')
+app.provide("config", config);
+app.provide("canAccess", canAccess);
+app.use(i18n());
+app.mount("#app");

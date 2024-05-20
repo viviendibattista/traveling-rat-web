@@ -4,7 +4,7 @@ import vuetify from "./vuetify";
 import router from "../router";
 import axios from "axios";
 import VueAxios from "vue-axios";
-// import snackbar from "./snackbar";
+import snackbar from "./snackbar";
 
 export function registerPlugins(app) {
   const isDev = process.env.NODE_ENV !== "production";
@@ -47,10 +47,10 @@ export function registerPlugins(app) {
       } else {
         errorsContent.push(error.message ?? "Undefined");
       }
-    //   let snackbar = app.config.globalProperties.$snackbar;
-    //   if (!axios.isCancel(error)) {
-    //     snackbar.error(errorsContent);
-    //   }
+      let snackbar = app.config.globalProperties.$snackbar;
+      if (!axios.isCancel(error)) {
+        snackbar.error(errorsContent);
+      }
       return Promise.reject(error.response);
     }
   );
@@ -58,7 +58,7 @@ export function registerPlugins(app) {
   window.axios = axios;
   loadFonts();
 
-  app.use(vuetify).use(router).use(VueAxios, axios)/*.use(snackbar, {
+  app.use(vuetify).use(router).use(VueAxios, axios).use(snackbar, {
     timeout: 3500,
-  })*/;
+  });
 }

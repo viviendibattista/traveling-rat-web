@@ -1,0 +1,30 @@
+{
+  "languages": {
+    "fr": "Français",
+    "en": "Anglais"
+  },
+  "title": {
+    "config": "Configuration"
+  },
+  "messages": {
+    "today": "Ajour"
+  },
+  "today": "aujourd'hui",
+  "this week": "cette semaine",
+  "this month": "ce mois",
+  "this year": "cette année",
+  "yesterday": "hier",
+  "last week": "semaine dernière",
+  "last month": "mois dernier",
+  "last year": "année dernière",
+  "tomorrow": "demain",
+  "next week": "semaine prochaine",
+  "next month": "mois prochain",
+  "next year": "année prochaine",
+  "custom": "choisir",
+  "all": "tout",
+  "When": "Date",
+  "Between": "Intervalle",
+  "From": "Début",
+  "To": "Fin"
+}
