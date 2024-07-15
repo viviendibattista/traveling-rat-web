@@ -4,13 +4,25 @@ import { appStore } from "../store/app";
 const routes = [
   {
     path: "/",
+    redirect: { name: "Home" },
     component: () => import("@/layouts/default/Default.vue"),
     children: [
       {
-        path: "/",
+        path: "/home",
         name: "Home",
         component: () => import("@/views/Home.vue"),
         meta: { authorized_role: 1, title: "Liste des tips" },
+      },
+      {
+        path: "/help_page",
+        name: "HelpPage",
+        component: () => import("@/views/HelpPage.vue"),
+        meta: { authorized_role: 1, title: "Aide" },
+      },
+      {
+        path: "/:pathMatch(.*)*",
+        name: "NotFound",
+        component: () => import("@/views/NotFound.vue"),
       },
     ],
   },
