@@ -1,3 +1,5 @@
+![Logo](https://github.com/viviendibattista/traveling-rat-web/blob/main/src/assets/logo.png?raw=true)
+
 # Traveling Rat is a platform that allows tourists to share their tips when visiting a new city
 
 ## Project setup
