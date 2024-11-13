@@ -1,4 +1,4 @@
-![Logo](https://github.com/viviendibattista/traveling-rat-web/blob/main/src/assets/logo.png?raw=true){ width="591" height="128" style="display: block; margin: 0 auto" }
+![Logo](https://github.com/viviendibattista/traveling-rat-web/blob/main/src/assets/logo.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}
 
 # Traveling Rat is a platform that allows tourists to share their tips when visiting a new city
 
