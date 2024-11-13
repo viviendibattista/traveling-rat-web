@@ -1,4 +1,6 @@
-![Logo](https://github.com/viviendibattista/traveling-rat-web/blob/main/src/assets/logo.png?raw=true){:style="display:block; margin-left:auto; margin-right:auto"}
+<p align="center">
+  <img src="https://github.com/viviendibattista/traveling-rat-web/blob/main/src/assets/logo.png?raw=true">
+</p>
 
 # Traveling Rat is a platform that allows tourists to share their tips when visiting a new city
 
